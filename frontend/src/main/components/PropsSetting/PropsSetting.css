@@ -1,0 +1,41 @@
+.props-setting {
+  width: 250px;
+  background: #FF9200;
+  padding: 10px 0;
+
+  z-index: 1;
+  opacity: 0.8;
+
+  position: absolute;
+  top: 0px;
+  right: -252px;
+}
+.props-setting > h2 {
+  color: #FF9200;
+  font-size: 18px;
+
+  margin-top: 10px;
+}
+.props-box {
+  width: 90%;
+  height: 30px;
+  margin: 6px auto;
+
+  color: #fff;
+}
+.props-editor {
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  background: #fefefe;
+  border: none;
+  float: right;
+
+  outline: none;
+  color: #FF9200;
+  font-size: 14px;
+}
+.props-editor:focus {
+
+}

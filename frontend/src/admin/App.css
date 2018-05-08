@@ -1,0 +1,13 @@
+.ant-list-item-action a {
+  color: rgba(255, 146, 0, 0.8);
+}
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+  color: rgba(255, 146, 0, 0.8) !important;
+  border-bottom: 2px solid rgba(255, 146, 0, 0.8) !important;
+}
+.ant-menu-item > a:hover {
+  color: rgba(255, 146, 0, 0.8) !important;
+}
+.ant-menu-item:hover {
+  border: none !important;
+}

@@ -1,0 +1,49 @@
+.controller {
+  position: absolute;
+
+  cursor: pointer;
+}
+.controller:hover .controller-tool-list {
+  display: block;
+}
+.controller:hover {
+  display: block;
+  border: 1px solid rgba(255, 146, 0, 0.8) !important;
+}
+.controller-tool-list {
+  display: none;
+  height: 20px;
+  z-index: 10;
+
+  position: absolute;
+  top: -22px;
+  right: -2px;
+
+  color: #fff;
+
+  float: right;
+}
+.controller-tool-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.controller-tool-list > div {
+  width: 20px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.delete {
+  background: rgba(157, 41, 50, 0.5);
+}
+.delete:hover {
+  background: rgba(157, 41, 50, 1);
+}
+.edit {
+  background: rgba(255, 146, 0, 0.5);
+}
+.edit:hover {
+  background: rgba(255, 146, 0, 1);
+}

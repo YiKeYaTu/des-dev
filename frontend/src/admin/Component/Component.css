@@ -1,0 +1,16 @@
+#component-list {
+  background: #fff;
+
+  padding: 0px 30px;
+  margin-top: 50px;
+}
+.editor-box {
+  display: flex;
+  justify-content: space-between;
+}
+.editor-box span {
+  padding-bottom: 10px;
+}
+.editor-box > div{
+  width: 550px;
+}

@@ -1,0 +1,115 @@
+{
+  "description": "",
+  "displayName": "Btn",
+  "methods": [],
+  "props": {
+    "htmlType": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'submit'",
+            "computed": false
+          },
+          {
+            "value": "'reset'",
+            "computed": false
+          },
+          {
+            "value": "'button'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": ""
+    },
+    "ghost": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": ""
+    },
+    "href": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": ""
+    },
+    "loading": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": ""
+    },
+    "shape": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'circle'",
+            "computed": false
+          },
+          {
+            "value": "null",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": ""
+    },
+    "size": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'small'",
+            "computed": false
+          },
+          {
+            "value": "'large'",
+            "computed": false
+          },
+          {
+            "value": "null",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": ""
+    },
+    "type": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'primary'",
+            "computed": false
+          },
+          {
+            "value": "'dashed'",
+            "computed": false
+          },
+          {
+            "value": "'danger'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": ""
+    },
+    "children": {
+      "defaultValue": {
+        "value": "'默认按钮'",
+        "computed": false
+      },
+      "required": false
+    }
+  }
+}
