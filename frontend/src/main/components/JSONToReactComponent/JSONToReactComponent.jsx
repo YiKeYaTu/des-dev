@@ -51,6 +51,7 @@ export default class JSONToReactComponent extends React.Component {
           addElement: this.props.addElement,
           removeElement: this.props.removeElement,
           updateVJSON: this.props.updateVJSON,
+          setActiveComponent: this.props.setActiveComponent,
           ...props
         },
         props.children
@@ -67,6 +68,7 @@ export default class JSONToReactComponent extends React.Component {
           removeElement={this.props.removeElement}
           updateVJSON={this.props.updateVJSON}
           throwError={this.props.throwError}
+          setActiveComponent={this.props.setActiveComponent}
         />;
       })
     } else if (_.isObject(VJSON)) {
@@ -104,6 +106,7 @@ export default class JSONToReactComponent extends React.Component {
                 removeElement={this.props.removeElement}
                 updateVJSON={this.props.updateVJSON}
                 throwError={this.props.throwError}
+                setActiveComponent={this.props.setActiveComponent}
               />
             </VJSON.Class>
           </Controller>

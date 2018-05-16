@@ -1,1 +1,14 @@
-{}
+{
+  "description": "",
+  "displayName": "Dropdown",
+  "methods": [],
+  "props": {
+    "hoverText": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": ""
+    }
+  }
+}

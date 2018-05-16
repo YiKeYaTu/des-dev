@@ -1,5 +1,6 @@
 import React from 'react';
 import PropsSetting from '../PropsSetting/PropsSetting';
+import loadingElements from '../../../util/loadingElements';
 
 import _ from 'lodash';
 import './Controller.css';
@@ -37,7 +38,23 @@ export default class Controller extends React.Component {
       this.props.VJSON
     );
   }
+  onMouseDown = (e) => {
+    this.timer = setTimeout(() => {
+      const VJSON = this.props.VJSON;
 
+      this.onDelete();
+      this.props.setActiveComponent({
+        activeComponentName: VJSON.name, 
+        activeComponent: VJSON.Class,
+        activeComponentConfig: VJSON.componentDescription,
+        left: VJSON.pos.x,
+        top: VJSON.pos.y
+      });
+    }, 1000);
+  };
+  onMouseUp = () => {
+    clearTimeout(this.timer);
+  };
   onDelete = () => {
     this.props.updateVJSON(this.props.VJSON, 'DELETE');
     this.forceUpdate();
@@ -64,6 +81,8 @@ export default class Controller extends React.Component {
         <div 
           ref="controller" 
           className="controller" 
+          onMouseDown={this.onMouseDown}
+          onMouseUp={this.onMouseUp}
 
           style={{
             ...this.productControllerStyle()

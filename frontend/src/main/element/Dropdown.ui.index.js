@@ -23,7 +23,7 @@ export default class Dropdown_ extends React.Component {
       <div>
         <Dropdown overlay={menu}>
           <a className="ant-dropdown-link" href="#">
-            Hover me <Icon type="down" />
+            {this.props.hoverText || 'Hover me'} <Icon type="down" />
           </a>
         </Dropdown>
       </div>

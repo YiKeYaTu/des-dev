@@ -1,0 +1,80 @@
+{
+  "description": "",
+  "displayName": "Menu",
+  "methods": [
+    {
+      "name": "handleClick",
+      "docblock": null,
+      "modifiers": [],
+      "params": [
+        {
+          "name": "e",
+          "type": null
+        }
+      ],
+      "returns": null
+    }
+  ],
+  "props": {
+    "mode": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'horizontal'",
+            "computed": false
+          },
+          {
+            "value": "'vertical'",
+            "computed": false
+          },
+          {
+            "value": "'vertical-right'",
+            "computed": false
+          },
+          {
+            "value": "'inline'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": "",
+      "defaultValue": {
+        "value": "'horizontal'",
+        "computed": false
+      }
+    },
+    "multiple": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": ""
+    },
+    "selectable": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": ""
+    },
+    "theme": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'light'",
+            "computed": false
+          },
+          {
+            "value": "'dark'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": ""
+    }
+  }
+}

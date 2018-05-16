@@ -30,21 +30,22 @@ class App extends Component {
 
   };
   // 选中元素
-  setActiveComponent = (activeComponent) => {
+  setActiveComponent = ({
+    activeComponentName, activeComponent,
+    activeComponentConfig,
+    left,
+    top
+  }) => {
     if (!activeComponent) {
       this.clearActiveComponent();
     } else {
-      this.setState({ activeComponent });
+      this.setState({ 
+        activeComponentName,
+        activeComponent,
+        activeComponentConfig,
+        activeComponentProps: { left, top }
+       });
     }
-  };
-  setActiveComponentName = (activeComponentName) => {
-    this.setState({ activeComponentName });
-  };
-  setActiveComponentProps = (activeComponentProps) => {
-    this.setState({ activeComponentProps });
-  };
-  setActiveComponentConfig = (activeComponentConfig) => {
-    this.setState({ activeComponentConfig });
   };
   // 设置拖拽位置
   setActiveComponentDragPosition = (activeComponentDragPositionLeft, activeComponentDragPositionTop) => {
@@ -212,9 +213,6 @@ class App extends Component {
       <div className='app' onDragStart={e => e.preventDefault()}>
         <ComponentsList
           setActiveComponent={this.setActiveComponent}
-          setActiveComponentName={this.setActiveComponentName}
-          setActiveComponentConfig={this.setActiveComponentConfig}
-          setActiveComponentDragPosition={this.setActiveComponentDragPosition}
         />
         <Board
           updateVJSON={this.updateVJSON}
@@ -222,6 +220,7 @@ class App extends Component {
 
           VJSON={this.state.VJSON}
           activeComponent={this.state.activeComponent}
+          setActiveComponent={this.setActiveComponent}
         />
         <DragPreview
           activeComponent={activeComponent}

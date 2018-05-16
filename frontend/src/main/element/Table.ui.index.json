@@ -1,0 +1,1 @@
+{"description":"","displayName":"App","methods":[{"name":"handleTableChange","docblock":null,"modifiers":[],"params":[{"name":"pagination","type":null},{"name":"filters","type":null},{"name":"sorter","type":null}],"returns":null},{"name":"fetch","docblock":null,"modifiers":[],"params":[{"name":"params","type":null}],"returns":null}]}

@@ -27,10 +27,12 @@ export default class ComponentsList extends React.PureComponent {
     }
   }
   DragItemCallBack = (activeComponentName, activeComponent, activeComponentConfig, left, top) => {
-    this.props.setActiveComponent(activeComponent);
-    this.props.setActiveComponentName(activeComponentName);
-    this.props.setActiveComponentConfig(activeComponentConfig);
-    this.props.setActiveComponentDragPosition(left, top);
+    this.props.setActiveComponent({
+      activeComponentName, activeComponent,
+      activeComponentConfig,
+      left,
+      top
+    });
   }
 
   renderList() {

@@ -1,5 +1,5 @@
 .props-setting {
-  width: 250px;
+  width: 300px;
   background: #FF9200;
   padding: 10px 0;
 
@@ -8,7 +8,7 @@
 
   position: absolute;
   top: 0px;
-  right: -252px;
+  right: -302px;
 }
 .props-setting > h2 {
   color: #FF9200;

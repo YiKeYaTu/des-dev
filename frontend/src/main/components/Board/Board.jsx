@@ -116,6 +116,7 @@ export default class Board extends React.Component {
 
             addElement={this.addElement}
             removeElement={this.removeElement}
+            setActiveComponent={this.props.setActiveComponent}
           />
         </div>
       </div>
